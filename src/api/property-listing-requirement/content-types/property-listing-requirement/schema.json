@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_listing_requirements",
+  "info": {
+    "singularName": "property-listing-requirement",
+    "pluralName": "property-listing-requirements",
+    "displayName": "property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "owner_name": {
+      "type": "string"
+    },
+    "heirs_details": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "geo_location": {
+      "type": "text"
+    },
+    "door_number": {
+      "type": "biginteger"
+    },
+    "property_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "property_doc": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "posted_by": {
+      "type": "string"
+    },
+    "createdby_usedid": {
+      "type": "biginteger"
+    },
+    "patta_number": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "pin_code": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    }
+  }
+}
