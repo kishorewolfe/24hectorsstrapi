@@ -13,7 +13,7 @@ module.exports = [
   {
     name: "strapi::cors",
     config: {
-      origin: ["http://localhost:3000"], // Allow your frontend's origin
+      origin: ["http://localhost:3000","http://localhost:5174/"], // Allow your frontend's origin
       methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       headers: ["Content-Type", "Authorization"],
       keepHeadersOnError: true,
