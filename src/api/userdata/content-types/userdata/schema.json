@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usersdata",
+  "info": {
+    "singularName": "userdata",
+    "pluralName": "usersdata",
+    "displayName": "userdata"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fullname": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Password": {
+      "type": "password",
+      "required": true,
+      "minLength": 6,
+      "maxLength": 14
+    },
+    "userid": {
+      "type": "uid",
+      "targetField": "Fullname"
+    },
+    "userType": {
+      "type": "enumeration",
+      "enum": [
+        "Agent",
+        "Developer",
+        "Builder"
+      ]
+    }
+  }
+}
