@@ -789,6 +789,38 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiApprovalApproval extends Schema.CollectionType {
+  collectionName: 'approvals';
+  info: {
+    singularName: 'approval';
+    pluralName: 'approvals';
+    displayName: 'approval';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    requestedById: Attribute.String;
+    owner_userId: Attribute.String;
+    product_id: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::approval.approval',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::approval.approval',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPropertyProperty extends Schema.CollectionType {
   collectionName: 'properties';
   info: {
@@ -959,6 +991,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::approval.approval': ApiApprovalApproval;
       'api::property.property': ApiPropertyProperty;
       'api::property-listing-requirement.property-listing-requirement': ApiPropertyListingRequirementPropertyListingRequirement;
       'api::testkish.testkish': ApiTestkishTestkish;

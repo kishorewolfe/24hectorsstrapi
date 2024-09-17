@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "approvals",
+  "info": {
+    "singularName": "approval",
+    "pluralName": "approvals",
+    "displayName": "approval"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "requestedById": {
+      "type": "string"
+    },
+    "owner_userId": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    }
+  }
+}
