@@ -4,7 +4,8 @@
   "info": {
     "singularName": "approval",
     "pluralName": "approvals",
-    "displayName": "approval"
+    "displayName": "approval",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,13 +13,13 @@
   "pluginOptions": {},
   "attributes": {
     "requestedById": {
-      "type": "string"
-    },
-    "owner_userId": {
-      "type": "string"
+      "type": "biginteger"
     },
     "product_id": {
-      "type": "string"
+      "type": "biginteger"
+    },
+    "owner_userId": {
+      "type": "biginteger"
     }
   }
 }

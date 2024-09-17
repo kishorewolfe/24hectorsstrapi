@@ -795,14 +795,15 @@ export interface ApiApprovalApproval extends Schema.CollectionType {
     singularName: 'approval';
     pluralName: 'approvals';
     displayName: 'approval';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    requestedById: Attribute.String;
-    owner_userId: Attribute.String;
-    product_id: Attribute.String;
+    requestedById: Attribute.BigInteger;
+    product_id: Attribute.BigInteger;
+    owner_userId: Attribute.BigInteger;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
