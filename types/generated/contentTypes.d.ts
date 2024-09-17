@@ -804,6 +804,7 @@ export interface ApiApprovalApproval extends Schema.CollectionType {
     requestedById: Attribute.BigInteger;
     product_id: Attribute.BigInteger;
     owner_userId: Attribute.BigInteger;
+    usertype: Attribute.Enumeration<['Agent', 'Developer', 'Builder']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

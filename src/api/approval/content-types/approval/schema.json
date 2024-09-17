@@ -20,6 +20,14 @@
     },
     "owner_userId": {
       "type": "biginteger"
+    },
+    "usertype": {
+      "type": "enumeration",
+      "enum": [
+        "Agent",
+        "Developer",
+        "Builder"
+      ]
     }
   }
 }
