@@ -13,7 +13,7 @@ module.exports = [
   {
     name: "strapi::cors",
     config: {
-      origin: ["http://localhost:3000","http://localhost:5174","https://24hectors.vercel.app","http://143.110.177.97:3000"], // Allow your frontend's origin
+      origin: ["http://localhost:3000","http://localhost:5174","https://24hectors.vercel.app","http://143.110.177.97:3000","http://24hectares.com/","https://24hectares.com/"], // Allow your frontend's origin
       methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       headers: ["Content-Type", "Authorization"],
       keepHeadersOnError: true,
